@@ -73,7 +73,7 @@ No nível **Normal**, o jogador automático opta pela seguinte estratégia:
 
 No nível **Avançado**, o  jogador automático opta pelos seguintes passos, por ordem:
 
-1. Se possível, seleciona uma casa que permita capturar as peças de uma das casas do oponente (ver Regra B).
+1. Se possível, seleciona uma casa que permita capturar as peças de uma das casas do oponente (ver Regra B). Se existirem várias na mesma situação, opta pela mais à esquerda possível.
 2. Se possível, seleciona uma casa que permita terminar no poço, de forma a jogar novamente. Se existirem várias na mesma situação, opta pela mais à esquerda possível (ver Regra A).
 3. Seleciona a casa mais à direita possível para espalhar sementes.
 
@@ -202,8 +202,8 @@ Entrada:
 Saída com sucesso:
 
     NomeJogadorA X NomeJogadorB
-    (Poço B)\t[Casa6 B]\t[Casa5 B]\t[Casa4 B]\t[Casa3 B]\t[Casa2 B]\t[Casa1 B]
-    \t[Casa1 A]\t[Casa2 A]\t[Casa3 A]\t[Casa4 A]\t[Casa5 A]\t[Casa6 A]\t(Poço A)
+    [Poço B]\t(Casa6 B)\t(Casa5 B)\t(Casa4 B)\t(Casa3 B)\t(Casa2 B)\t(Casa1 B)
+    \t(Casa1 A)\t(Casa2 A)\t(Casa3 A)\t(Casa4 A)\t(Casa5 A)\t(Casa6 A)\t[Poço A]
 
 Exemplo:
 
